@@ -30,7 +30,6 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtz-Oa-mfC"/>
-                                    <segue destination="8Vc-ia-9LG" kind="showDetail" id="1c3-Pr-Nsq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj7-yS-F5l">
@@ -48,25 +47,37 @@
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="VTO-aN-7uS" id="Pnf-xj-33t"/>
+                        <segue destination="8Vc-ia-9LG" kind="presentation" identifier="next" modalPresentationStyle="fullScreen" id="F43-le-V0i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="84"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="Hq6-Ve-L2T">
             <objects>
-                <viewController id="8Vc-ia-9LG" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlJ-8n-Ygh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="8Vc-ia-9LG" customClass="SecondViewController" customModule="ios_storyboard_practice" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jDd-kP-d5f">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wo1-yK-Y7k">
+                                <rect key="frame" x="37" y="91" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Button"/>
+                                <connections>
+                                    <action selector="back:" destination="8Vc-ia-9LG" eventType="touchUpInside" id="hbu-DQ-Itz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aFx-w2-4bt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NFh-y5-jWu"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nlJ-8n-Ygh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="778" y="84"/>
         </scene>

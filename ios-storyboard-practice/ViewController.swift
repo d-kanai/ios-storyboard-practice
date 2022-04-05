@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         countLabel.text = String(count)
         if count >= 10 {
             countLabel.textColor = UIColor.green
+            performSegue(withIdentifier: "next", sender: nil)
+
         }
     }
     
