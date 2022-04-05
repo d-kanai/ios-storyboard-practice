@@ -20,6 +20,12 @@ class SecondViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func Switch(_ sender: UISwitch) {
+        if sender.isOn {
+            print("switch tapped!")
+        }
+    }
+    
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
 
