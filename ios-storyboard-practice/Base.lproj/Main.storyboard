@@ -72,11 +72,21 @@
                                     <action selector="back:" destination="8Vc-ia-9LG" eventType="touchUpInside" id="hbu-DQ-Itz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Roboletrics" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bde-Yg-gLm">
+                                <rect key="frame" x="142" y="383" width="86" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="aFx-w2-4bt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="NFh-y5-jWu"/>
+                    <connections>
+                        <outlet property="label" destination="bde-Yg-gLm" id="9YQ-pf-IJD"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="778" y="84"/>

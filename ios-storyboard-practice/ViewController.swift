@@ -18,6 +18,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //引数segueの中に画面遷移に関する情報が含まれている。
+        if segue.identifier == "next" {
+            let nextVC = segue.destination as! SecondViewController
+            nextVC.passdata = count
+        }
+    }
 
     @IBAction func tappedButton(_ sender: Any) {
         print("tapped button")
