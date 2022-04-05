@@ -22,6 +22,7 @@ class SecondViewController: UIViewController {
     
     @IBAction func Switch(_ sender: UISwitch) {
         if sender.isOn {
+            showNotification()
             print("switch tapped!")
         }
     }
@@ -29,5 +30,16 @@ class SecondViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         dismiss(animated: true, completion: nil)
 
+    }
+    
+    func showNotification() {
+        let content = UNMutableNotificationContent()
+        content.title = "countUpAppForBeginners"
+        content.body = "switchをオンにしました。"
+        content.sound = UNNotificationSound.default
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(3), repeats: false) //3秒後に通知させる
+        let request = UNNotificationRequest(identifier: "changedSwitch", content: content, trigger: trigger)
+
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
 }
