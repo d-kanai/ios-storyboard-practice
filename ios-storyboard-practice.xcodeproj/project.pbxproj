@@ -19,6 +19,7 @@
 		1A2AC07327FAF8EF00074773 /* ios_storyboard_practiceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AC07227FAF8EF00074773 /* ios_storyboard_practiceUITestsLaunchTests.swift */; };
 		1A2AC08027FC632200074773 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AC07F27FC632200074773 /* SecondViewController.swift */; };
 		1A2AC08227FD2F3300074773 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AC08127FD2F3300074773 /* TimerViewController.swift */; };
+		1A2AC08527FD30C500074773 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AC08427FD30C500074773 /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		1A2AC07227FAF8EF00074773 /* ios_storyboard_practiceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_storyboard_practiceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A2AC07F27FC632200074773 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1A2AC08127FD2F3300074773 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		1A2AC08427FD30C500074773 /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		1A2AC04B27FAF8EE00074773 /* ios-storyboard-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A2AC08327FD30B300074773 /* ViewModels */,
 				1A2AC04C27FAF8EE00074773 /* AppDelegate.swift */,
 				1A2AC04E27FAF8EE00074773 /* SceneDelegate.swift */,
 				1A2AC05027FAF8EE00074773 /* ViewController.swift */,
@@ -134,6 +137,14 @@
 				1A2AC07227FAF8EF00074773 /* ios_storyboard_practiceUITestsLaunchTests.swift */,
 			);
 			path = "ios-storyboard-practiceUITests";
+			sourceTree = "<group>";
+		};
+		1A2AC08327FD30B300074773 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1A2AC08427FD30C500074773 /* CounterViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +281,7 @@
 				1A2AC05127FAF8EE00074773 /* ViewController.swift in Sources */,
 				1A2AC05727FAF8EE00074773 /* ios_storyboard_practice.xcdatamodeld in Sources */,
 				1A2AC04D27FAF8EE00074773 /* AppDelegate.swift in Sources */,
+				1A2AC08527FD30C500074773 /* CounterViewModel.swift in Sources */,
 				1A2AC08027FC632200074773 /* SecondViewController.swift in Sources */,
 				1A2AC08227FD2F3300074773 /* TimerViewController.swift in Sources */,
 				1A2AC04F27FAF8EE00074773 /* SceneDelegate.swift in Sources */,

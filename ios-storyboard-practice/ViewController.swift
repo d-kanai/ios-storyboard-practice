@@ -1,9 +1,3 @@
-//
-//  ViewController.swift
-//  ios-storyboard-practice
-//
-//  Created by daiki kanai on 2022/04/04.
-//
 
 import UIKit
 
@@ -12,6 +6,8 @@ class ViewController: UIViewController {
     var count = 0
 
     @IBOutlet weak var countLabel: UILabel!
+    
+    private var viewModel = CounterViewModel()
 
     
     override func viewDidLoad() {
