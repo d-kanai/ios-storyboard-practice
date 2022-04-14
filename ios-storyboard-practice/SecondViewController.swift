@@ -39,6 +39,8 @@ class SecondViewController: UIViewController {
         content.sound = UNNotificationSound.default
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: TimeInterval(3), repeats: false) //3秒後に通知させる
         let request = UNNotificationRequest(identifier: "changedSwitch", content: content, trigger: trigger)
+        
+        
 
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }

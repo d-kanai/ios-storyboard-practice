@@ -11,8 +11,8 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_storyboard_practice" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="ios_storyboard_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ViewController" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -45,6 +45,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="ViewController">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
                     </view>
                     <connections>
                         <outlet property="countLabel" destination="VTO-aN-7uS" id="Pnf-xj-33t"/>
@@ -99,17 +102,20 @@
             </objects>
             <point key="canvasLocation" x="778" y="84"/>
         </scene>
-        <!--Timer View Controller-->
+        <!--Counter View Controller-->
         <scene sceneID="BZA-nd-H1b">
             <objects>
-                <viewController id="TEd-Hl-rXE" customClass="TimerViewController" customModule="ios_storyboard_practice" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CounterViewController" id="TEd-Hl-rXE" customClass="CounterViewController" customModule="ios_storyboard_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lqM-YL-faA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8P-FX-4Fj">
-                                <rect key="frame" x="172" y="342" width="71" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycV-m9-7CR">
+                                <rect key="frame" x="193" y="336" width="42" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="countLabel">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -118,10 +124,13 @@
                         <viewLayoutGuide key="safeArea" id="3BB-iQ-OaT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="counter" destination="ycV-m9-7CR" id="xFE-6I-pXs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mq7-Lv-cfG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="-584"/>
+            <point key="canvasLocation" x="786.95652173913049" y="-584.59821428571422"/>
         </scene>
     </scenes>
     <resources>

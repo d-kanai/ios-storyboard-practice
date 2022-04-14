@@ -1,5 +1,6 @@
 
 import UIKit
+import Combine
 
 class ViewController: UIViewController {
     
@@ -8,11 +9,20 @@ class ViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     
     private var viewModel = CounterViewModel()
-
+    private var binding = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let counter = Counter()
+//        NotificationCenter.default
+//            .publisher(for: UILabel.textDidChangeNotification, object: countLabel)
+//            .compactMap { $0.object as? UILabel }
+//            .map { $0.text ?? "" }
+//            .removeDuplicates() // 重複した値は排除
+//            .eraseToAnyPublisher()
+//            .receive(on: RunLoop.main)
+//            .assign(to: \.count, on: viewModel)
+//            .store(in: &binding)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -25,6 +35,7 @@ class ViewController: UIViewController {
 
     @IBAction func tappedButton(_ sender: Any) {
         print("tapped button")
+        viewModel.countUp()
         count = count + 1
         countLabel.text = String(count)
         if count >= 10 {
@@ -36,3 +47,11 @@ class ViewController: UIViewController {
     
 }
 
+
+class Counter {
+    var value: Int
+
+    init() {
+        value = 0
+    }
+}
