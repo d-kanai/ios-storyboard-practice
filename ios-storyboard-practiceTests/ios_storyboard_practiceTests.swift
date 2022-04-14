@@ -38,4 +38,13 @@ class CounterControllerTests: XCTestCase {
     }
 }
 
+class MockCounterViewController: CounterViewController {
+    
+    override func viewDidloadWithDependency() {
+        print("override dependency function from test for ignore it")
+    }
+    
+}
+
+
 

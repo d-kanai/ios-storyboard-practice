@@ -7,9 +7,10 @@ class CounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(counter.accessibilityIdentifier)
-        print("test")
-
+    }
+    
+    func viewDidloadWithDependency() {
+        print("here is dependency...!")
     }
     
 
