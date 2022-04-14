@@ -120,6 +120,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xeq-3V-ZEZ">
+                                <rect key="frame" x="162" y="481" width="80" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="countUpButton"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Countup"/>
+                                <connections>
+                                    <action selector="tapCountUpButton:" destination="TEd-Hl-rXE" eventType="touchUpInside" id="GPr-Ak-NBF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3BB-iQ-OaT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
