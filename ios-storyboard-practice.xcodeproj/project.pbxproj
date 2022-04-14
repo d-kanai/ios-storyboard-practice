@@ -94,6 +94,16 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
+		1A1109452807D54E00201E56 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A2AC05027FAF8EE00074773 /* ViewController.swift */,
+				1A2AC07F27FC632200074773 /* SecondViewController.swift */,
+				1A2AC08127FD2F3300074773 /* CounterViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		1A2AC04027FAF8EE00074773 = {
 			isa = PBXGroup;
 			children = (
@@ -117,18 +127,16 @@
 		1A2AC04B27FAF8EE00074773 /* ios-storyboard-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A1109452807D54E00201E56 /* ViewControllers */,
 				1A1109422807D23600201E56 /* Presenters */,
 				1A2AC08327FD30B300074773 /* ViewModels */,
 				1A2AC04C27FAF8EE00074773 /* AppDelegate.swift */,
 				1A2AC04E27FAF8EE00074773 /* SceneDelegate.swift */,
-				1A2AC05027FAF8EE00074773 /* ViewController.swift */,
 				1A2AC05227FAF8EE00074773 /* Main.storyboard */,
-				1A2AC07F27FC632200074773 /* SecondViewController.swift */,
 				1A2AC05827FAF8EE00074773 /* Assets.xcassets */,
 				1A2AC05A27FAF8EE00074773 /* LaunchScreen.storyboard */,
 				1A2AC05D27FAF8EE00074773 /* Info.plist */,
 				1A2AC05527FAF8EE00074773 /* ios_storyboard_practice.xcdatamodeld */,
-				1A2AC08127FD2F3300074773 /* CounterViewController.swift */,
 			);
 			path = "ios-storyboard-practice";
 			sourceTree = "<group>";
