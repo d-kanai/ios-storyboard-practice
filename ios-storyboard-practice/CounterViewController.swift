@@ -7,16 +7,21 @@ class CounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewDidloadWithDependency()
     }
     
     func viewDidloadWithDependency() {
         print("here is dependency...!")
     }
-    
 
+    // input actions
     @IBAction func tapCountUpButton(_ sender: Any) {
         print("tapCountup")
-        let number = Int(counter.text!)!
-        counter.text = String(number + 1)
+        CounterPresenter().increment(view: self, counterNumber: Int(counter.text!)!)
+    }
+    
+    // output actions
+    func updateCounterLabel(countNumber: Int) {
+        counter.text = String(countNumber)
     }
 }
