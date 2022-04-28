@@ -16,11 +16,3 @@ class TestApplication: MyApplication {
     }
 }
 
-class MockCounterLogic: CounterLogic {
-    
-    override func someMethod() -> String {
-        print("test override CounterLogic.someMethod")
-        return "mock return"
-    }
-    
-}

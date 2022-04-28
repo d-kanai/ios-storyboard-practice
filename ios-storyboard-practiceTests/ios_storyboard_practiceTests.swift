@@ -8,7 +8,9 @@ class CounterControllerTests: XCTestCase {
     override func setUp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         vc = storyboard.instantiateViewController(withIdentifier: "CounterViewController") as? CounterViewController
-        TestApplication.mockCounterLogic = MockCounterLogic()
+        let mock = MockCounterLogic()
+        mock.stubSomeMethod = "mock return"
+        TestApplication.mockCounterLogic = mock
     }
     
     func test_show_default_counter_label() {
@@ -39,10 +41,13 @@ class CounterControllerTests: XCTestCase {
     }
 }
 
-class MockCounterViewController: CounterViewController {
+class MockCounterLogic: CounterLogic {
     
-    override func viewDidloadWithDependency() {
-        print("override dependency function from test for ignore it")
+    var stubSomeMethod: String = ""
+    
+    override func someMethod() -> String {
+        print("test override CounterLogic.someMethod")
+        return stubSomeMethod
     }
     
 }
