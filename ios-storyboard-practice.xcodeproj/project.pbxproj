@@ -26,6 +26,7 @@
 		1A2AE9D4281A82490044967A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D3281A82490044967A /* main.swift */; };
 		1A2AE9D6281A8CAA0044967A /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */; };
 		1A2AE9D8281A8DCA0044967A /* CounterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */; };
+		1A2AE9DA281AA6190044967A /* TestApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D9281AA6190044967A /* TestApplication.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		1A2AE9D3281A82490044967A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
 		1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogic.swift; sourceTree = "<group>"; };
+		1A2AE9D9281AA6190044967A /* TestApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplication.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				1A2AE9CF281A81020044967A /* MyApplication.swift */,
 				1A2AE9D1281A81180044967A /* MyAppDelegate.swift */,
 				1A2AE9D3281A82490044967A /* main.swift */,
+				1A2AE9D9281AA6190044967A /* TestApplication.swift */,
 			);
 			path = "ios-storyboard-practice";
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				1A2AE9D0281A81020044967A /* MyApplication.swift in Sources */,
 				1A2AC08527FD30C500074773 /* CounterViewModel.swift in Sources */,
 				1A2AE9D4281A82490044967A /* main.swift in Sources */,
+				1A2AE9DA281AA6190044967A /* TestApplication.swift in Sources */,
 				1A2AC08027FC632200074773 /* SecondViewController.swift in Sources */,
 				1A2AC08227FD2F3300074773 /* CounterViewController.swift in Sources */,
 				1A2AC04F27FAF8EE00074773 /* SceneDelegate.swift in Sources */,

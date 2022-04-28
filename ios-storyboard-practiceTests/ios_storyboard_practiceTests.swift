@@ -8,6 +8,7 @@ class CounterControllerTests: XCTestCase {
     override func setUp() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         vc = storyboard.instantiateViewController(withIdentifier: "CounterViewController") as? CounterViewController
+        TestApplication.mockCounterLogic = MockCounterLogic()
     }
     
     func test_show_default_counter_label() {

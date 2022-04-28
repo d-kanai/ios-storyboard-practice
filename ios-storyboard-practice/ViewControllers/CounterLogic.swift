@@ -3,8 +3,9 @@ import Foundation
 
 class CounterLogic {
     
-    func someMethod() {
+    func someMethod() -> String {
         print("call someMethod!!")
+        return "real return"
     }
     
 }
