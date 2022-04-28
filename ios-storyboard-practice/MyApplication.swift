@@ -12,4 +12,8 @@ class MyApplication: UIApplication {
         return UIApplication.shared as! MyApplication
     }
     
+    var counterLogic: CounterLogic {
+        return CounterLogic()
+    }
+    
 }

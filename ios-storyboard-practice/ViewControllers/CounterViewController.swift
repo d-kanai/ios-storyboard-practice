@@ -7,6 +7,7 @@ class CounterViewController: ViewControllerBase {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        counterLogic.someMethod()
         viewDidloadWithDependency()
     }
     

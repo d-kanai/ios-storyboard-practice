@@ -25,6 +25,7 @@
 		1A2AE9D2281A81180044967A /* MyAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D1281A81180044967A /* MyAppDelegate.swift */; };
 		1A2AE9D4281A82490044967A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D3281A82490044967A /* main.swift */; };
 		1A2AE9D6281A8CAA0044967A /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */; };
+		1A2AE9D8281A8DCA0044967A /* CounterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		1A2AE9D1281A81180044967A /* MyAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppDelegate.swift; sourceTree = "<group>"; };
 		1A2AE9D3281A82490044967A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				1A2AC07F27FC632200074773 /* SecondViewController.swift */,
 				1A2AC08127FD2F3300074773 /* CounterViewController.swift */,
 				1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */,
+				1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A2AC05127FAF8EE00074773 /* ViewController.swift in Sources */,
+				1A2AE9D8281A8DCA0044967A /* CounterLogic.swift in Sources */,
 				1A1109442807D24600201E56 /* CounterPresenter.swift in Sources */,
 				1A2AE9D2281A81180044967A /* MyAppDelegate.swift in Sources */,
 				1A2AC05727FAF8EE00074773 /* ios_storyboard_practice.xcdatamodeld in Sources */,
