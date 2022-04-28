@@ -2,7 +2,7 @@
 import UIKit
 import Combine
 
-class ViewController: UIViewController {
+class ViewController: ViewControllerBase {
     
     var count = 0
 

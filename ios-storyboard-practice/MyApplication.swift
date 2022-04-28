@@ -8,4 +8,8 @@ class MyApplication: UIApplication {
         print("init Application")
     }
     
+    override class var shared: MyApplication {
+        return UIApplication.shared as! MyApplication
+    }
+    
 }

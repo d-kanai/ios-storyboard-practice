@@ -1,7 +1,7 @@
 
 import UIKit
 
-class CounterViewController: UIViewController {
+class CounterViewController: ViewControllerBase {
 
     @IBOutlet weak var counter: UILabel!
     
