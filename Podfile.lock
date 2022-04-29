@@ -1,0 +1,16 @@
+PODS:
+  - WiremockClient (2.0.0)
+
+DEPENDENCIES:
+  - WiremockClient
+
+SPEC REPOS:
+  trunk:
+    - WiremockClient
+
+SPEC CHECKSUMS:
+  WiremockClient: e60ff0ff336a6335c6e234550496a583647a678a
+
+PODFILE CHECKSUM: cd75d9043bcd6110b1f16b289b7e516daadbcb9b
+
+COCOAPODS: 1.11.3
