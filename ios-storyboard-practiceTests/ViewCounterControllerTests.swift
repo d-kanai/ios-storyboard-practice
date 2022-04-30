@@ -15,13 +15,6 @@ class CounterControllerTests: XCTestCase {
     }
     
     func test_show_default_counter_label() throws {
-        try WiremockClient.postMapping(stubMapping:
-            StubMapping.stubFor(requestMethod: .ANY, urlMatchCondition: .urlEqualTo, url: "http://localhost:8080/hoge/fuga")
-                .willReturn(
-                    ResponseDefinition()
-                        .withStatus(200)
-            )
-        )
         //when
         let label = findById(id: "countLabel") as UILabel
         //then
@@ -53,7 +46,7 @@ class MockCounterLogic: CounterLogic {
     
     var stubSomeMethod: String = ""
     
-    override func someMethod() async throws -> String {
+    override func sampleMethod() async throws -> String {
         print("test override CounterLogic.someMethod")
         return stubSomeMethod
     }

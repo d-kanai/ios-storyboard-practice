@@ -15,7 +15,7 @@ class HttpClient {
     }
     
     private func request<T:Decodable>(method: String, url: String, body:[String: Any]?=nil) async throws -> T {
-        let url = URL(string:"http://localhost:9000\(url)")!
+        let url = URL(string:"http://localhost:8080\(url)")!
         var request = URLRequest(url: url)
         request.url = url
         request.httpMethod = method
@@ -25,6 +25,7 @@ class HttpClient {
             request.httpBody = finalBody
             print(finalBody!)
         }
+        
         
         let (data, response) = try await URLSession.shared.data(for: request)
         guard let response = response as? HTTPURLResponse else {

@@ -3,14 +3,15 @@ import Foundation
 
 class CounterLogic {
     
-    func someMethod() async throws -> String {
-        print("call someMethod!!")
-        let _:Response = try await HttpClient().get(url: "/sample")
-        return "real return"
+    func sampleMethod() async throws -> String {
+        print("call sampleMethod!!")
+        let response:Response = try await HttpClient().get(url: "/sample")
+        return response.message
     }
     
 }
 
 struct Response: Codable {
+    var message: String
     
 }
