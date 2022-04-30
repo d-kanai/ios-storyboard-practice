@@ -28,6 +28,7 @@
 		1A2AE9D6281A8CAA0044967A /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */; };
 		1A2AE9D8281A8DCA0044967A /* CounterLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */; };
 		1A2AE9DA281AA6190044967A /* TestApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2AE9D9281AA6190044967A /* TestApplication.swift */; };
+		1A3B1C0C281CB0DA004CACD0 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3B1C0B281CB0DA004CACD0 /* HttpClient.swift */; };
 		5979F974926DF06D6F4A94D0 /* Pods_ios_storyboard_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCE32EE2385ABCADD4299C1B /* Pods_ios_storyboard_practiceTests.framework */; };
 		684111C25964A4C319D9936B /* Pods_ios_storyboard_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14EEB946C44D82AADB9E87C8 /* Pods_ios_storyboard_practice.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		1A2AE9D5281A8CAA0044967A /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
 		1A2AE9D7281A8DCA0044967A /* CounterLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterLogic.swift; sourceTree = "<group>"; };
 		1A2AE9D9281AA6190044967A /* TestApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApplication.swift; sourceTree = "<group>"; };
+		1A3B1C0B281CB0DA004CACD0 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		24A856DDEC8FA5D7B951D8FC /* Pods-ios-storyboard-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-storyboard-practice.debug.xcconfig"; path = "Target Support Files/Pods-ios-storyboard-practice/Pods-ios-storyboard-practice.debug.xcconfig"; sourceTree = "<group>"; };
 		2771F4044D57EE3431C18E9B /* Pods-ios-storyboard-practice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-storyboard-practice.release.xcconfig"; path = "Target Support Files/Pods-ios-storyboard-practice/Pods-ios-storyboard-practice.release.xcconfig"; sourceTree = "<group>"; };
 		2903431B4861C21C4F70AF5F /* Pods-ios-storyboard-practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-storyboard-practiceTests.debug.xcconfig"; path = "Target Support Files/Pods-ios-storyboard-practiceTests/Pods-ios-storyboard-practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 		1A2AC04B27FAF8EE00074773 /* ios-storyboard-practice */ = {
 			isa = PBXGroup;
 			children = (
+				1A3B1C0A281CB0C5004CACD0 /* Utils */,
 				1A1109452807D54E00201E56 /* ViewControllers */,
 				1A1109422807D23600201E56 /* Presenters */,
 				1A2AC08327FD30B300074773 /* ViewModels */,
@@ -209,6 +212,14 @@
 				1A2AC08427FD30C500074773 /* CounterViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1A3B1C0A281CB0C5004CACD0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A3B1C0B281CB0DA004CACD0 /* HttpClient.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		64BCCFD1FC83BA98CA6C8EE5 /* Pods */ = {
@@ -473,6 +484,7 @@
 				1A2AE9D0281A81020044967A /* MyApplication.swift in Sources */,
 				1A2AC08527FD30C500074773 /* CounterViewModel.swift in Sources */,
 				1A2AE9D4281A82490044967A /* main.swift in Sources */,
+				1A3B1C0C281CB0DA004CACD0 /* HttpClient.swift in Sources */,
 				1A2AE9DA281AA6190044967A /* TestApplication.swift in Sources */,
 				1A2AC08027FC632200074773 /* SecondViewController.swift in Sources */,
 				1A2AC08227FD2F3300074773 /* CounterViewController.swift in Sources */,

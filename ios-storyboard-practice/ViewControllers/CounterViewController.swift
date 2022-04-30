@@ -7,9 +7,15 @@ class CounterViewController: ViewControllerBase {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let data = counterLogic.someMethod()
-        print(data)
+        Task{
+            let data = try await counterLogic.someMethod()
+            print(data)
+        }
         viewDidloadWithDependency()
+    }
+    
+    func callBack() {
+        
     }
     
     func viewDidloadWithDependency() {
