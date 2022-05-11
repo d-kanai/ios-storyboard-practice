@@ -10,7 +10,7 @@ class TestApplication: MyApplication {
 
     override var counterLogic: CounterLogic {
         if(TestApplication.mockCounterLogic == nil) {
-            assert(false, "it should set mockCounterLogic. production code try to use CounterLogic")
+            assert(false, "it should set mockCounterLogic when use TestApplication class. production code try to use CounterLogic")
         }
         return TestApplication.mockCounterLogic!
     }

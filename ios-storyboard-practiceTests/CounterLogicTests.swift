@@ -5,7 +5,7 @@ import WiremockClient
 
 class CounterLogicTests: XCTestCase {
     
-    func test_hoge() async throws {
+    func test_logic_wiremock() async throws {
         //given
         try WiremockClient.postMapping(stubMapping:
             StubMapping.stubFor(requestMethod: .ANY, urlMatchCondition: .urlEqualTo, url: "/sample")
