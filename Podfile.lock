@@ -1,16 +1,20 @@
 PODS:
+  - Cucumberish (1.4.0)
   - WiremockClient (2.0.0)
 
 DEPENDENCIES:
+  - Cucumberish
   - WiremockClient
 
 SPEC REPOS:
   trunk:
+    - Cucumberish
     - WiremockClient
 
 SPEC CHECKSUMS:
+  Cucumberish: 6cbd0c1f50306b369acebfe7d9f514c9c287d26c
   WiremockClient: e60ff0ff336a6335c6e234550496a583647a678a
 
-PODFILE CHECKSUM: cd75d9043bcd6110b1f16b289b7e516daadbcb9b
+PODFILE CHECKSUM: 38bbd82fede73718829eebf1f2026acffc95e6a0
 
 COCOAPODS: 1.11.3

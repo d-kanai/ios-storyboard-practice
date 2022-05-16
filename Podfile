@@ -11,6 +11,7 @@ target 'ios-storyboard-practice' do
   end
 
   target 'ios-storyboard-practiceUITests' do
+    pod "Cucumberish"
   end
 
 end
